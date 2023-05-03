@@ -26,8 +26,31 @@
   </head>
   <body>
 
-    <!--Link to JS file-->
-    <script src="./js/script.js"></script>
-
     <!--Header-->
     <?php echo "<h1>Number Display Webpage, PHP</h1>"; ?>
+
+    <!--Text-->
+      <?php echo "<h3>Welcome to my number display webpage!</h3> <p>My webpage allows you to choose a mininmun number and a maxiumnm number and determine the range of numbers between your input.</p>"; ?>
+
+      <?php echo "<h3>Your Input:</h3>"; ?>
+
+    <!--Form for user input-->
+    <form action="./calculations.php" method="post" target="results">
+        <label for="min number">Enter a minimum number:</label>
+        <input type="number" step="1" name="min-number" placeholder="Minimum">
+      <br>
+      <br>
+        <label for="max number">Enter a maximum number:</label>
+        <input type="number" step="1" name="max-number" placeholder="Maximum">
+      <br>
+      <br>
+      <input type="submit" value="Submit Numbers" id="submit-button">
+    </form>
+
+    <!--Iframe to display results-->
+    <iframe id="results" name="results"></iframe>
+
+    <!--Image-->
+    <img src="./images/randomNumbers.png" alt="Numbers" width="400" length="400"/>
+  </body>
+</html>
