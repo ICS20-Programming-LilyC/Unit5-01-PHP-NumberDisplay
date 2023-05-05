@@ -30,7 +30,7 @@
     <?php echo "<h1>Number Display Webpage, with PHP</h1>"; ?>
 
     <!--Text-->
-    <?php echo "<h3>Welcome to my number display webpage!</h3>" ; ?>
+    <?php echo "<h3>Welcome to my number display webpage!</h3>"; ?>
   <center>
     <?php echo "<p>My webpage allows you to choose a mininmun number and a maxiumnm number and determine the range of numbers between your input.</p>"; ?>
   </center>
@@ -42,8 +42,8 @@
       <input type="number" step="1" name="min-number" placeholder="Minimum">
       <br>
       <br>
-        <label for="max number">Enter a maximum number:</label>
-        <input type="number" step="1" name="max-number" placeholder="Maximum">
+      <label for="max number">Enter a maximum number:</label>
+      <input type="number" step="1" name="max-number" placeholder="Maximum">
       <br>
       <br>
 
@@ -53,13 +53,13 @@
       <br>
 
     <!--Iframe to display results-->
-    <iframe id="results" name="results"></iframe>
+      <iframe id="results" name="results"></iframe>
       <br>
       <br>
 
     <!--Image-->
       <center>
-    <img src="./images/randomNumbers.png" alt="Numbers" width="400" length="400"/>
+        <img src="./images/randomNumbers.png" alt="Numbers" width="400" length="400"/>
       </center>
     </form>
   </body>
