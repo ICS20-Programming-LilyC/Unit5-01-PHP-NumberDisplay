@@ -1,38 +1,39 @@
 <?php
 
-// Declaring variables for numbers and message for later
+  // Establishing empty variables for numbers and message (for later).
 $numbers = "";
 $message = "";
 
-// Getting the minimum and maxiumum input 
+  // Getting the minimum and maxiumum input.
 $minNumber = intval($_POST["min-number"]);
 $maxNumber = intval($_POST["max-number"]);
 
-// Initializing counter
+  // Initializing counter variable to minNumber.
 $counter = $minNumber;
 
-// If statement to ensure that maximum is greater than minumum.
+  // If statement to make sure that maximum is greater than minumum.
 if ($minNumber > $maxNumber) {
-  $message = "Ensure that minimum value is less than or equal to maximum value.";
+  $message = "Please make sure that your minimum value is less than or equal to your maximum value.";
 }
   
-// Else, make list of numbers
+  // Else, make list of numbers.
 else {
-  // While loop that provides the range
+
+  // While loop that provides the range of numbers determined by user.
   while (($counter >= $minNumber) && ($counter <= $maxNumber)) {
     
     // List of numbers with a break
     $numbers = $numbers . $counter . "<br>";
 
-    // Give an increment for counter
+    // Creating an increment for counter variable.
     $counter++;
 
-    // Set the message variable to display results
-    $message = "Here are all the numbers between the minimum and maximum numbers that you entered:<br><br>" . $numbers;
+    // Setting the message variable to display results
+    $message = "Below are all the numbers between your minimum and your maximum numbers that you entered:<br><br>" . $numbers;
   }
 }
 
-// Displaying the results (the range of numbers) back to the user
+  // Displaying the results (the range of numbers) back to the user
 echo $message;
 
 ?>

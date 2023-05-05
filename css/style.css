@@ -1,0 +1,31 @@
+/* Created by: Lily C
+* Created on: 05/03/2023
+* This CSS file defines the style for index.html
+* Unit5-01-PHP-NumberDisplay
+*/
+
+body {
+  background-color: linen;
+  padding-left: 20px; padding-right: 20px;
+}
+
+h1 {
+  background-color: rgb(102 155 188);
+  color: hsl(0deg 100% 24%);
+  padding: 40px;
+  text-align: center;
+}
+
+h3 {
+  color: #003049;
+}
+
+p {
+  background-color: #780000;
+  color: #FDF0D5
+}
+
+iframe {
+  background-color: #780000;
+  color: #FDF0D5;
+}

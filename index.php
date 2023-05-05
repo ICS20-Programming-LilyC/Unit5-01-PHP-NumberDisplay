@@ -19,38 +19,48 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!--MDL theme-->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-red.min.css" />
 
-    <!-- Title -->
+    <!--Title-->
     <title>Number Display Webpage</title>
   </head>
   <body>
 
     <!--Header-->
-    <?php echo "<h1>Number Display Webpage, PHP</h1>"; ?>
+    <?php echo "<h1>Number Display Webpage, with PHP</h1>"; ?>
 
     <!--Text-->
-      <?php echo "<h3>Welcome to my number display webpage!</h3> <p>My webpage allows you to choose a mininmun number and a maxiumnm number and determine the range of numbers between your input.</p>"; ?>
-
-      <?php echo "<h3>Your Input:</h3>"; ?>
+    <?php echo "<h3>Welcome to my number display webpage!</h3>" ; ?>
+  <center>
+    <?php echo "<p>My webpage allows you to choose a mininmun number and a maxiumnm number and determine the range of numbers between your input.</p>"; ?>
+  </center>
+    <?php echo "<h3>Please enter your input below:</h3>"; ?>
 
     <!--Form for user input-->
     <form action="./calculations.php" method="post" target="results">
-        <label for="min number">Enter a minimum number:</label>
-        <input type="number" step="1" name="min-number" placeholder="Minimum">
+      <label for="min number">Enter a minimum number:</label>
+      <input type="number" step="1" name="min-number" placeholder="Minimum">
       <br>
       <br>
         <label for="max number">Enter a maximum number:</label>
         <input type="number" step="1" name="max-number" placeholder="Maximum">
       <br>
       <br>
-      <input type="submit" value="Submit Numbers" id="submit-button">
-    </form>
+
+    <!--Adding id to submit button to style button-->
+      <input type="submit" id="submit" value="Submit" button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+      <br>
+      <br>
 
     <!--Iframe to display results-->
     <iframe id="results" name="results"></iframe>
+      <br>
+      <br>
 
     <!--Image-->
+      <center>
     <img src="./images/randomNumbers.png" alt="Numbers" width="400" length="400"/>
+      </center>
+    </form>
   </body>
 </html>
