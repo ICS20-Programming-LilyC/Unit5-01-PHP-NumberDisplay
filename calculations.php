@@ -17,15 +17,15 @@ if ($minNumber > $maxNumber) {
 }
   
   // Else, make a list of numbers.
-else {
+  else {
 
-  // While loop that provides the range of numbers determined by user.
+  // While loop that provides the range of numbers determined by the user.
   while (($counter >= $minNumber) && ($counter <= $maxNumber)) {
     
     // List of numbers with a break.
     $numbers = $numbers . $counter . "<br>";
 
-    // Creating an increment for counter variable.
+    // Creating an increment for counter the variable.
     $counter++;
 
     // Setting the message variable to display results

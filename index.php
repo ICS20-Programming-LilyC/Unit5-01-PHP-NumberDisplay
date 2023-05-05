@@ -32,7 +32,7 @@
     <!--Text-->
     <?php echo "<h3>Welcome to my number display webpage!</h3>"; ?>
   <center>
-    <?php echo "<p>My webpage allows you to choose a mininmun number and a maxiumnm number and determine the range of numbers between your input.</p>"; ?>
+    <?php echo "<p>My webpage allows you to choose a minimum number and a maximum number and determine the range of numbers between your input.</p>"; ?>
   </center>
     <?php echo "<h3>Please enter your input below:</h3>"; ?>
 
