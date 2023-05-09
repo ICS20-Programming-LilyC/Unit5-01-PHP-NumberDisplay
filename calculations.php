@@ -33,7 +33,7 @@ elseif ($minNumber > $maxNumber) {
     // List of numbers with a break.
     $numbers = $numbers . $counter . "<br>";
 
-    // Creating an increment for counter the variable.
+    // Creating an increment to counter the variable.
     $counter++;
 
     // Setting the message variable to display results
